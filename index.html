@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Página Personal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #003366;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    section {
+      background-color: white;
+      margin-bottom: 20px;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    .extra {
+      display: none;
+      margin-top: 10px;
+      color: #333;
+      background-color: #f0f0f0;
+      padding: 10px;
+      border-radius: 6px;
+    }
+
+    .mostrar {
+      margin-top: 10px;
+      background-color: #004080;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Las Habibi's noticias</h1>
+  <p>Si la vida te da Camellos, Explotalos por algo soy arábe.</p>
+</header>
+
+<nav>
+  <a href="#inicio">Inicio</a>
+  <a href="#novedades">Novedades</a>
+  <a href="#frases">Frases</a>
+  <a href="#recuerdos">Recuerdos</a>
+  <a href="#biografia">Biografía</a>
+</nav>
+
+<main>
+  <section id="inicio">
+    <h2>Inicio</h2>
+    <p>Bienvenido a la pagina personal de Habibi Jordan Oppenheimer Jr.</p>
+  </section>
+
+  <section id="novedades">
+    <h2>Novedades</h2>
+    <p>Las acciones más recientes de Habibi en su día a día.</p>
+    <button class="mostrar" onclick="toggleExtra('extra-novedades')">Mirame está</button>
+    <div id="extra-novedades" class="extra">
+      <p>02 de Junio del 2025, Habibi hizo el adelanto de su cuota mesual e inicial para sacar su moto marca "Camellaja 150", alución a su camello ya que lo extraña, y pronto lo veremos con su mantel encima rodando por las calles </p>
+    </div>
+  </section>
+
+  <section id="frases">
+    <h2>Frases</h2>
+    <p>Frases que Habibi o Oppenheimer Jr ha dicho en algun momento de su vida.</p>
+    <button class="mostrar" onclick="toggleExtra('extra-frases')">Mirame está</button>
+    <div id="extra-frases" class="extra">
+      <p>"El oxigeno es gas natural del aire" – Habibi Jordan Jr Oppenheimer, "Tengo gastritis, no puedo comer eso, solo me voy a comprar una gaseosa" – Habibi Jordan Jr Oppenheimer, "No puedo comer mucha grasa, compraré esta cancha con mantequilla" – Habibi Jordan Jr Oppenheimer </p>
+    </div>
+  </section>
+
+  <section id="recuerdos">
+    <h2>Recuerdos</h2>
+    <p>Momentos "Especiales" que hemos vivido junto a Habibi Mohammed Jr.</p>
+    <button class="mostrar" onclick="toggleExtra('extra-recuerdos')">Ver más</button>
+    <div id="extra-recuerdos" class="extra">
+      <p>"Cuando tiro el celular al piso para ver si era resistente", "Cuando casi malogra la cocina y el microondas de Jair", "Cuando le hablo a su perro y este no le hizo caso"</p>
+    </div>
+  </section>
+
+  <section id="biografia">
+    <h2>Biografía</h2>
+    <p>Quieres conocer al Amo de las explosiones?, al experto en detonar edificios?, al millonario arabe que contiene muchos camellos?, que esperas para hacer click aquí.</p>
+    <button class="mostrar" onclick="toggleExtra('extra-biografia')">Ver más</button>
+    <div id="extra-biografia" class="extra">
+      <p>Angel o conocido normalmente como Habibi, es mitad Peruano y mitad Arabe, actualmente tiene 23 años, cuenta con las mismas cromosomas como dice su edad, desde pequeño siempre le gusto la navidad y año nuevo
+	  debido a que le gustaba explotar cosas, le gustaba vestirse con manteles y toallas de preferencia blancas, en el colegio fue arquero, pero todo fue porque le recordaba en Arabia, cuando atrapaba las bombas y las 
+	  devolvia lanzandolas al enemigo, hoy en dia le gusta andar en moto, pero no para moverse, si no porque le recuerda su vida anterior de cuando montaba camellos..</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Pagina autorizada por la persona a la cual estamos tomando como referencia, cualquier duda o pregunta, no la hagas, me llega al huevo.
+</footer>
+
+<script>
+  function toggleExtra(id) {
+    const div = document.getElementById(id);
+    div.style.display = div.style.display === 'block' ? 'none' : 'block';
+  }
+</script>
+
+</body>
+</html>
