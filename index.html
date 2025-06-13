@@ -146,6 +146,29 @@
     div.style.display = div.style.display === 'block' ? 'none' : 'block';
   }
 </script>
+<audio id="musica" loop>
+  <source src="Allahu Trapbar.mp3" type="audio/mpeg">
+  Tu navegador no soporta audio.
+</audio>
+
+<button onclick="toggleAudio()" id="boton-musica">▶️ Reproducir Música</button>
+
+<script>
+  const musica = document.getElementById("musica");
+  const boton = document.getElementById("boton-musica");
+  let reproduciendo = false;
+
+  function toggleAudio() {
+    if (reproduciendo) {
+      musica.pause();
+      boton.textContent = "▶️ Reproducir Música";
+    } else {
+      musica.play();
+      boton.textContent = "⏸️ Pausar Música";
+    }
+    reproduciendo = !reproduciendo;
+  }
+</script>
 
 </body>
 </html>
