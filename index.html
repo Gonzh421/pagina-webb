@@ -89,28 +89,7 @@
 </nav>
 
 <main>
-<audio id="musica" loop>
-  <source src="Allahu Trapbar.mp3" type="audio/mpeg">
-  Tu navegador no soporta audio.
-</audio>
 
-<button onclick="toggleAudio()" id="boton-musica">▶️ Reproducir Música</button>
-
-<script>
-  const musica = document.getElementById("musica");
-  const boton = document.getElementById("boton-musica");
-  let reproduciendo = false;
-
-  function toggleAudio() {
-    if (reproduciendo) {
-      musica.pause();
-      boton.textContent = "▶️ Reproducir Música";
-    } else {
-      musica.play();
-      boton.textContent = "⏸️ Pausar Música";
-    }
-    reproduciendo = !reproduciendo;
-  }
   <section id="inicio">
     <h2>Inicio</h2>
     <p>Bienvenido a la pagina personal de Habibi Jordan Oppenheimer Jr.</p>
